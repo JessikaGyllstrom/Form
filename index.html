@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to boxicons icons-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">    
+    <!-- link to my css-file-->
+    <link rel="stylesheet" href="/stylesheet/mystyle.css">
+   <title>Form</title>
+</head>
+<body>
+    <section>
+        <div class="main-container">
+            <div class="image-container">
+                 <img src="/images/doglogo.jpg">
+                 <div class="socialmedia-icons">
+                     <span class="circle-icon">
+                        <i class="bx bxl-facebook-square"></i>
+
+
+                     <i class="bx bxl-instagram-alt"></i>
+                     <i class="bx bxl-twitter"></i>
+
+                     </span>
+                 </div>
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <h1>Dog Adoption</h1>
+                    <label for="name"> Full name </label><br>
+                    <input type="text" name="name" placeholder="Enter your name" minlength="2"><br>
+                    <label for="phonenumber"> Phonenumber </label><br>
+                    <input type="phonenumber" name="phonenumber" placeholder="Enter your phonenumber" minlength="8"><br>
+                    <label for="name"> What age are you looking for? </label><br>
+                    <div class="checkbox-container">
+                        <input class="checkbox" type="checkbox" id="puppy" name="puppy" value="puppy">
+                        <label class="checkbox-lbl" for="puppy"> Puppy </label>
+                        <input class="checkbox" type="checkbox" id="adult" name="adult" value="adult">
+                        <label class="checkbox-lbl" for="adult"> Adult </label>
+                        <input class="checkbox" type="checkbox" id="senior" name="senior" value="senior">
+                        <label class="checkbox-lbl" for="senior"> Senior </label>
+                    </div>   
+                    <div class="selection">
+                        <label for="breeds"> Choose what kind of breeds you prefere:</label><br>
+                        <!-- the select tag creates a dropdownlist-->
+                        <!-- the "multiple-attribute" will allow for several selections-->      
+                        <select name="breeds" id="breeds" multiple>
+                            <option value="any" selected>Any</option>
+                            <option value="Golden Retriever">Golden Retriever</option>
+                            <option value="German Shepherd">German Shepherd</option>
+                            <option value="Beagle">Beagle</option>
+                            <option value="French Bulldog">French Bulldog</option>
+                            <option value="Poodle">Poodle</option>
+                            <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+                            <option value="Dachshund">Dachshund</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Rottweiler">Rottweiler</option>
+                        </select><br>
+                    </div>
+                    <div class="text-area">
+                        <label for="message"> Leave us a message: </label><br>
+                        <textarea class="textarea" name="message" id="message" cols="50" rows="10" maxlength="
+                        200"></textarea><br>
+                        <input type="checkbox" id="news" name="news" checked>
+                        <label for="news">Subscribe to our newsletter</label><br>
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
